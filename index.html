@@ -4,14 +4,15 @@
   <title>WEB</title>
   <meta charset="utf-8">
   <style>
-      body {
+     body {
         margin:0;
       }
       a {
-        color: gray;
+        color: black;
         text-decoration: none;
       }
       h1 {
+        font-size: 45px;
         text-align: center;
         border-bottom: 1px solid gray;
         padding: 20px;
@@ -22,15 +23,20 @@
         grid-template-columns: 150px 1fr;
       }
       #grid ol {
+        color: black;
         border-right: 1px solid gray;
         padding-left: 25px;
         padding-top: 20px;
         margin: 0;
       }
-      #grid #article{
-        padding-left: 20px;
+      @media(max-width:800px){
+        #grid {
+          display: block;
+        }
+        ol, h1 { 
+          border: none;
+        }
       }
-  
   </style>
 </head>
 <body>
