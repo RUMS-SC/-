@@ -6,59 +6,47 @@
 }
 body {
     font-family: 'SEBANG_Gothic_Bold';
-
 }
 
 .container {
-    display: inline-flex;
-    justify-items: 300px 1fr;
-}
-
-.item {
-    flex-direction: column-reverse;
-}
-img {
     width: 380px;
-    height: 800px;
-    object-fit: cover;
+    height: 850px;
+    background-image: url("file:///C:/Users/Administrator/Desktop/myweb-main/%EB%82%B4%EB%B8%94%EB%A1%9C%EA%B7%B8/image.jpg");
+    background-size: cover;
 }
 
-.allist {
-
-    display: block;
-    width: 300px; 
-    bottom: 350px; 
-    padding: center;
-    position: absolute;
-    margin: 50px 20px 50px 80px;
+.container .item:nth-child(1) {
+    color: rgb(9, 42, 73);
     text-align: center;
-}
-a {
-    text-decoration: none;
-    color: rgb(14, 31, 46);  
-}
-
-div> h1 {
+    padding-top: 200px;
+    font-size: 45px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-size: 40px;
-    color: rgb(4, 9, 14);
-    margin: 20px;
-    padding-right: 50px;
-}
-.list>div {
-    display: block;
-    margin: 15px;
-    padding-top: 10px;
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-    color: (14, 31, 46);
-    background-color: blanchedalmond;
 }
 
-.list>div:hover {
-    background-color: rgba(73, 163, 223, 0.74);
+.container .item:nth-child(2)>div {
+    color: rgb(9, 42, 73);
+    font-size: 20px;
+    display: block;
+    width: 250px;
+    height: 35px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 65px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+ul> div:first-child {
+    margin-top: 15px;
+}
+
+.container .item:nth-child(2)>div:hover {
+    background-color: rgb(9, 42, 73);
+    color: lavender;
     transition: 0.5s;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
